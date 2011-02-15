@@ -5,7 +5,7 @@
 		Quick Search: <input type="text" name="q" id="q" />
 		<input type="submit" value="Search" />
 	</form>
-	<ul>
+	<ul class="menubar">
 		<li><a href="index.php">Home</a></li>
 		<li><a href="login.php">Login</a></li>
 	</ul>
