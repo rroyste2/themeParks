@@ -3,7 +3,7 @@
 -- http://www.phpmyadmin.net
 --
 -- Host: localhost
--- Generation Time: Feb 17, 2011 at 08:20 PM
+-- Generation Time: Feb 22, 2011 at 10:55 AM
 -- Server version: 5.1.41
 -- PHP Version: 5.3.1
 
@@ -40,8 +40,7 @@ CREATE TABLE IF NOT EXISTS `general_info` (
 --
 
 INSERT INTO `general_info` (`City`, `State`, `Zipcode`, `adult_price`, `children_price`, `Phone_Number`, `Park_Name`) VALUES
-('Doswell', 'VA', '23047', '9.99', '9.99', '800-876-5338', NULL),
-(NULL, NULL, NULL, '42.99', '34.99', NULL, 'Kings Dominion'),
+('Doswell', 'VA', '23047', '42.99', '34.99', '800-876-5338', 'Kings Dominion'),
 ('Williamsburg', 'VA', '23185', '63.99', '53.99', '800-343-7946', 'Busch Gardens'),
 ('Sandusky', 'OH', '44870', '46.99', '21.00', '419-627-2350', 'Cedar Point'),
 ('Orlando', 'FL', '32819', '82.00', '74.00', '407-363-8000', 'Islands of Adventure'),
