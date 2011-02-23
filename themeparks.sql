@@ -3,7 +3,7 @@
 -- http://www.phpmyadmin.net
 --
 -- Host: localhost
--- Generation Time: Feb 22, 2011 at 10:55 AM
+-- Generation Time: Feb 19, 2011 at 05:20 PM
 -- Server version: 5.1.41
 -- PHP Version: 5.3.1
 
@@ -18,6 +18,8 @@ SET SQL_MODE="NO_AUTO_VALUE_ON_ZERO";
 --
 -- Database: `themeparks`
 --
+CREATE DATABASE `themeparks` DEFAULT CHARACTER SET latin1 COLLATE latin1_swedish_ci;
+USE `themeparks`;
 
 -- --------------------------------------------------------
 
@@ -40,14 +42,16 @@ CREATE TABLE IF NOT EXISTS `general_info` (
 --
 
 INSERT INTO `general_info` (`City`, `State`, `Zipcode`, `adult_price`, `children_price`, `Phone_Number`, `Park_Name`) VALUES
-('Doswell', 'VA', '23047', '42.99', '34.99', '800-876-5338', 'Kings Dominion'),
+('Doswell', 'VA', '23047', '9.99', '9.99', '800-876-5338', NULL),
+(NULL, NULL, NULL, '42.99', '34.99', NULL, 'Kings Dominion'),
 ('Williamsburg', 'VA', '23185', '63.99', '53.99', '800-343-7946', 'Busch Gardens'),
 ('Sandusky', 'OH', '44870', '46.99', '21.00', '419-627-2350', 'Cedar Point'),
 ('Orlando', 'FL', '32819', '82.00', '74.00', '407-363-8000', 'Islands of Adventure'),
 ('Orlando', 'FL', '32819', '82.00', '74.00', '407-363-8000', 'Universal Studios'),
 ('Santa Claus', 'IN', '47579', '42.95', '32.95', '812-937-4401', 'Holiday World'),
 ('Mason', 'OH', '45040', '51.99', '51.99', '513-754-5700', 'Kings Island'),
-('Jackson', 'NJ', '08527', '59.99', '34.99', '732-928-1821', 'Six Flags Great Adve');
+('Jackson', 'NJ', '08527', '59.99', '34.99', '732-928-1821', 'Six Flags Great Adve'),
+('Tampa', 'Fl', '33674', '77.99', '69.99', '888-800-5359', 'Busch Gardens');
 
 -- --------------------------------------------------------
 
@@ -96,17 +100,18 @@ INSERT INTO `rollercoaster` (`Name`, `Park`, `Type`, `Speed_mph`, `Height_ft`, `
 CREATE TABLE IF NOT EXISTS `waterrides` (
   `Name` varchar(20) DEFAULT NULL,
   `Park` varchar(20) DEFAULT NULL,
-  `Length_min` decimal(5,2) DEFAULT NULL
+  `Length_min` decimal(5,2) DEFAULT NULL,
+  `Height_ft` int(4) DEFAULT NULL
 ) ENGINE=MyISAM DEFAULT CHARSET=latin1;
 
 --
 -- Dumping data for table `waterrides`
 --
 
-INSERT INTO `waterrides` (`Name`, `Park`, `Length_min`) VALUES
-('Shenandoah Log Flume', 'Kings Dominion', '3.40'),
-('Escape from Pompeii', 'Busch Gardens', '2.10'),
-('Thunder Canyon', 'Cedar Point', '2.30');
+INSERT INTO `waterrides` (`Name`, `Park`, `Length_min`, `Height_ft`) VALUES
+('Shenandoah Log Flume', 'Kings Dominion', '3.40', NULL),
+('Escape from Pompeii', 'Busch Gardens', '2.10', NULL),
+('Thunder Canyon', 'Cedar Point', '2.30', NULL);
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
 /*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;

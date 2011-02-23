@@ -1,0 +1,53 @@
+@charset "UTF-8";
+/* CSS Document */
+
+.header {
+	margin: auto;
+	width: 890px;
+}
+.content {
+	margin: auto;
+	width:890px;
+}
+.mainImage {
+	margin: 0;
+	width: 890px;
+	height: 470px;
+}
+.mainContent {
+	margin:auto;
+	width: 890px;
+	position: relative;
+}
+
+#coasterPic {
+	background-image: url(images/coaster.jpeg);
+	margin: 0px;
+	padding: 0px;
+	height: 360px;
+	width: 890px;
+	position: absolute;
+}
+#wave {
+	margin-top: 300px;
+	margin-right: 0px;
+	margin-bottom: 0px;
+	margin-left: 0px;
+	position: absolute;
+	z-index: 1;
+	padding: 0px;
+}
+.logo {
+	float: left;
+	width: 50%;
+}
+.login {
+	float: right;
+}
+.username {
+	float: left;
+}
+.password {
+	float: right;
+}
+
