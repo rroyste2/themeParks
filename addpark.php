@@ -10,24 +10,11 @@
 <?php
 	include('db_connect.php');
 ?>
-<div class="content">
-<div class="header">
-  <div class="logo">Theme Park Travel Guide<br /><br />
-  <a href='newpark.php'>Add Park</a> | <a href='search.php'>Search Parks</a> | <a href='editparks.php'>Edit Parks</a>
-  </div>
-	<div class="login"><form method="post" action="login.php">
-    <div class="username"><label for="username">Username:</label><br /><input type="text" id="username" name="username" /><br />
-    <a href="#">Create an Account</a></div> 
-    <div class="password"><label for="pw">Password:</label><br /><input type="password" id="pw" name="pw" /><br />
-    <input name="submit" type="submit" class="password" value="Login" /></div>
-    </form>
-  </div>
-	<img src="images/headerbar.jpg" width="890" height="16" />
-</div>
-<div class="mainImage">
-  <div id="coasterPic"></div>
-  <div id="wave"><img src="images/curve.png" width="890" height="150" /></div>
-</div>
+<?php
+   include('header.html');
+?>
+ 
+<
 <div class="mainContent">
   <?php
   
