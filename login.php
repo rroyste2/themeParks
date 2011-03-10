@@ -15,16 +15,17 @@ session_start();
 <?php
 
   include "db_connect.php";
-  $name = $_POST['username'];
-  $pw = $_POST['pw'];
+  $username = $_POST['username'];
+  $password = $_POST['password'];
+echo "$password, $username";
 
-   $query = "select * from users WHERE username = '$name' AND password = SHA('$pw')";
+
+   $query = "select * from users WHERE username = '$username' AND password = SHA('$password')";
    $result = mysqli_query($db, $query);
    if ($row = mysqli_fetch_array($result))
    {
-   		$_SESSION['zip'] = $row['zipcode'];
-   		echo "<p>Thanks for logging in, $name</p>\n";
-   		echo "<p><a href=\"search.php\">Continue</a></p>";
+   		echo "<p>Thanks for logging in, $username</p>\n";
+   		echo "<p><a href=\"mainPage.php\">Continue</a></p>";
    }
    else
     {
@@ -32,12 +33,12 @@ session_start();
 		echo $query;
    		echo  "<h1>Log In</h1>\n  <form method=\"post\" action=\"login.php\">";
     	echo "<label for=\"username\">Username:</label><input type=\"text\" id=\"username\" name=\"username\" /><br />";
-        echo "<label for=\"pw\">Password:</label><input type=\"password\" id=\"pw\" name=\"pw\" /><br />";
-        echo "<input type=\"submit\" value=\"Login\" name=\"submit\" /></form> <p><a href=\"createAccount.html\">Create Account</a></p>";
+        echo "<label for=\"password\">Password:</label><input type=\"password\" id=\"password\" name=\"password\" /><br />";
+        echo "<input type=\"submit\" value=\"Login\" name=\"submit\" /></form> <p><a href=\"createAccount.php\">Create Account</a></p>";
     }
    
   $_SESSION ['username'] = $name;
-$_SESSION ['pw'] = $pw;
+$_SESSION ['password'] = $password;
 
 ?>
   

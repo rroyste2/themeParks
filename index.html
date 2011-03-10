@@ -7,6 +7,17 @@
 </head>
 
 <body>
+ <?php
+   include('header.html');
+?>
+<?php
+
+include('db_connect.php');
+$username = $_POST['username'];
+$password = $_POST['password'];
+
+?>
+
 
 <div class="content">
 <div class="header">
@@ -15,8 +26,8 @@
   </div>
 	<div class="login"><form method="post" action="login.php">
     <div class="username"><label for="username">Username:</label><br /><input type="text" id="username" name="username" /><br />
-   <a href="createAccount.html">Create an Account</a></div> 
-    <div class="password"><label for="pw">Password:</label><br /><input type="password" id="pw" name="pw" /><br />
+    <a href="createAccount.html">Create an Account</a></div> 
+    <div class="password"><label for="password">Password:</label><br /><input type="password" id="password" name="password" /><br />
     <input name="submit" type="submit" class="password" value="Login" /></div>
     </form>
   </div>
@@ -24,7 +35,7 @@
 </div>
 <div class="mainImage">
   <div id="coasterPic"></div>
-  <div id="wave"><img src="images/curve.png" width="890" height="150" /></div>
+  <div id="wave"><img src="images/curve.png" width="890" height="70" /></div>
 </div>
 <div class="mainContent">
 main content  goes here
