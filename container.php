@@ -7,21 +7,14 @@
     <div id="nav">
         <ul class="sf-menu dropdown">
                 <li><a href="index.php">Home</a></li>
-            <li class="selected"><a class="has_submenu" href="examples.html">Examples</a>
+            <li><a class="has_submenu" href="#">User Panel</a>
                 <ul>
-                        <li class="selected"><a href="page.html">Static Text Page</a></li>
-                    <li><a href="noslides.html">Static Frontpage</a></li>
-                    <li><a href="#">Another link</a></li>
+		<!-- These are the default options if there is no user logged in -->
+                    <li><a href="login.php">Log On</a></li>
+                    <li><a href="register.php">Register</a></li>
                 </ul>
             </li>
-            <li><a class="has_submenu" href="#">Products</a>
-                <ul>
-                        <li><a href="#">Product One</a></li>
-                    <li><a href="#">Product Two</a></li>
-                    <li><a href="#">Product Three</a></li>
-                </ul>
-            </li>
-            <li><a href="#">Solutions</a></li>
-            <li><a href="#">Contact</a></li>
+		<li><a href="search.php">Search Parks</a></li>
+            <li><a href="aboutus.php">About Us</a></li>
         </ul>
     </div>
