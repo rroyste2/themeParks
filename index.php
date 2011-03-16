@@ -34,7 +34,7 @@ License: Creative Commons Attribution
     </div>
     <div id="nav">
     	<ul class="sf-menu dropdown">
-        	<li class="selected"><a href="index.html">Home</a></li>
+        	<li class="selected"><a href="index.php">Home</a></li>
             <li><a class="has_submenu" href="examples.html">Parks</a>
             	<ul>
                 	<li><a href="page.html">Top 10</a></li>
