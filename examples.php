@@ -22,34 +22,9 @@ License: Creative Commons Attribution
 </head>
 
 <body>
-<div id="container">
-	<div id="header">
-    	<h1><a href="/">Widget<strong>Website</strong></a></h1>
-        <h2>Your website slogan here</h2>
-        <div class="clear"></div>
-    </div>
-    <div id="nav">
-    	<ul class="sf-menu dropdown">
-        	<li><a href="index.html">Home</a></li>
-            <li class="selected"><a class="has_submenu" href="examples.html">Examples</a>
-            	<ul>
-                	<li><a href="page.html">Static Text Page</a></li>
-                    <li><a href="noslides.html">Static Frontpage</a></li>
-                    <li><a href="#">Another link</a></li>
-                </ul>
-            </li>
-            <li><a class="has_submenu" href="#">Products</a>
-            	<ul>
-                	<li><a href="#">Product One</a></li>
-                    <li><a href="#">Product Two</a></li>
-                    <li><a href="#">Product Three</a></li>
-                </ul>
-            </li>
-            <li><a href="#">Solutions</a></li>
-            <li><a href="#">Contact</a></li>
-        </ul>
-    </div>
-    
+	<?php
+		include 'container.php';
+	?> 
     <div id="sub-header">
 		<h2>A handful of HTML code examples</h2>
     </div>
@@ -170,61 +145,8 @@ License: Creative Commons Attribution
     	<div class="clear"></div>
     </div>
 </div>
- <div id="footer">
-      <div class="footer-content">
-
-        <div class="footer-box">
-            <h4>About our site</h4>
-
-            <p>
-                Morbi fermentum, nunc id pellentesque blandit, lectus velit pellentesque nisl, a condimentum est velit sed nisi. Sed libero velit, eleifend nec porttitor a, porta quis leo. In hac habitasse platea dictumst. 
-            </p>
-        </div>
-        
-        <div class="footer-box">
-            <h4>Categories</h4>
-
-            <ul>
-              <li><a href="#">Lorem ipsum dolor sit amet.</a></li>
-              <li><a href="#">Quisque consequat nunc a felis.</a></li>
-              <li><a href="#">Suspendisse consequat magna at.</a></li>
-              <li><a href="#">Etiam eget diam id ligula rhoncus.</a></li>
-              <li><a href="#">Sed in mauris non nibh.</a></li>
-
-            </ul>
-        </div>
-        
-        <div class="footer-box">
-
-            <h4>Network sites</h4>
-            <ul>
-                <li><a href="http://www.spyka.net" title="spyka Webmaster resources">spyka webmaster</a></li>
-                <li><a href="http://www.justfreetemplates.com" title="free web templates">Free web templates</a></li>
-
-                <li><a href="http://www.spyka.net/forums" title="webmaster forums">Webmaster forums</a></li>
-                <li><a href="http://www.awesomestyles.com/mybb-themes" title="mybb themes">MyBB themes</a></li>
-                <li><a href="http://www.awesomestyles.com" title="free phpbb3 themes">phpBB3 styles</a></li>
-            </ul>	
-        </div>
-        
-        <div class="footer-box end-footer-box">
-            <h4>Search our site</h4>
-
-            <form action="#" method="get">
-                <p>
-                    <input type="text" id="searchquery" size="18" name="searchterm" />
-
-                    <input type="submit" id="searchbutton" value="Search" class="formbutton" />
-                </p>
-            </form>
-        </div>     
-        <div class="clear"></div> 
-    </div>
-    <div id="footer-links">
-
-    <!-- A link to http://www.spyka.net must remain. To remove link see http://www.spyka.net/licensing -->
-            <p>&copy; YourSite 2010. Website design by <a href="http://www.spyka.net">Free CSS Templates</a> | <a href="http://www.justfreetemplates.com">Free Web Templates</a></p>
-    </div>  
-</div>
+	<?php
+		include 'footer.php';
+	?>
 </body>
 </html>
