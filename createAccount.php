@@ -17,6 +17,8 @@ $result = mysqli_query($db, $query)
 or die("Error Querying Database2");
 mysqli_close($db);
 ?>
-
+<META
+ HTTP-EQUIV="refresh"
+ CONTENT="0; URL =index.html">
 <div class="login"><form method="post" action="index.html">
 <input name="submit" type="submit" class="password" value="Click to continue" /></div>
