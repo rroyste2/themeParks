@@ -7,14 +7,14 @@
     <div id="nav">
         <ul class="sf-menu dropdown">
                 <li><a href="index.php">Home</a></li>
+		<li><a href="search.php">Search Parks</a></li>
             <li><a class="has_submenu" href="#">User Panel</a>
-                <ul>
+		<ul>
 		<!-- These are the default options if there is no user logged in -->
                     <li><a href="login.php">Log On</a></li>
                     <li><a href="register.php">Register</a></li>
                 </ul>
             </li>
-		<li><a href="search.php">Search Parks</a></li>
             <li><a href="aboutus.php">About Us</a></li>
         </ul>
     </div>
