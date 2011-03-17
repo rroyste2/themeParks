@@ -3,7 +3,7 @@
 -- http://www.phpmyadmin.net
 --
 -- Host: localhost
--- Generation Time: Mar 16, 2011 at 09:01 PM
+-- Generation Time: Mar 17, 2011 at 06:46 PM
 -- Server version: 5.1.41
 -- PHP Version: 5.3.1
 
@@ -137,6 +137,24 @@ INSERT INTO `rollercoaster` (`coaster_id`, `Name`, `Park`, `Type`, `Speed_mph`, 
 (22, 'Volcano', 'Kings Dominion', 'Steel', 70, 155, 2),
 (23, 'Drop Zone', 'Kings Dominion', 'Drop Tower', 72, 272, 2),
 (24, 'Anaconda', 'Kings Dominion', 'Steel', 50, 128, 2);
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `users`
+--
+
+CREATE TABLE IF NOT EXISTS `users` (
+  `userId` int(11) NOT NULL AUTO_INCREMENT,
+  `username` varchar(20) NOT NULL,
+  `password` varchar(20) NOT NULL,
+  PRIMARY KEY (`userId`)
+) ENGINE=MyISAM DEFAULT CHARSET=latin1 AUTO_INCREMENT=1 ;
+
+--
+-- Dumping data for table `users`
+--
+
 
 -- --------------------------------------------------------
 
