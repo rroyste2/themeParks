@@ -24,13 +24,38 @@ License: Creative Commons Attribution
 <body class="noheader">
 	<?php
 		include 'container.php';
+		include 'db_connect.php';
 	?> 
     <div id="body">            
 		<div id="content">
             <div class="box">
 		<h1>Log On</h1>
+		<?php
+			#Get the values from session
+			$username = $_POST['username'];
+			$password = $_POST['password'];
+
+			if($username != null){
+			#Query the table to see if the user exists
+			if ($row = mysqli_fetch_array($result))
+			{
+    				echo "<p>Thanks for logging in $username click below to go to your page</p>\n";
+				echo "<p><a href=\"mainPage.php\">Lets ride!</a></p>";
+				$_SESSION ['username'] = $username;
+				$_SESSION ['password'] = $password;
+			}
+			#Display an error message if things go wrong
+			else{
+				echo "<p><b>Incorrect username or password. Try again or <a href=\"register\">create an account</a></b></p>\n";
+			}
+
+			#Set session variables
+			$_SESSION ['username'] = $username;
+			$_SESSION ['password'] = $password;
+			}
+		?>
 		<fieldset>
-			<form action='#' method='post'>
+			<form action='login.php' method='post'>
 				<p><label for="username">Username:</label>
                                 <input name="username" id="name" value="" type="text" /><br /></p>
                                 <p><label for="password">Password:</label>
