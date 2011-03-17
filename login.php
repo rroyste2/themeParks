@@ -2,7 +2,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-<title>widget - Free CSS Template by spyka Webmaster</title>
+<title>ThemeWorld | Login</title>
 <link rel="stylesheet" href="styles.css" type="text/css" />
 			
             
@@ -28,14 +28,15 @@ License: Creative Commons Attribution
     <div id="body">            
 		<div id="content">
             <div class="box">
-		<fieldset style="margin-top:10em">
+		<h1>Log On</h1>
+		<fieldset>
 			<form action='#' method='post'>
 				<p><label for="username">Username:</label>
                                 <input name="username" id="name" value="" type="text" /><br /></p>
                                 <p><label for="password">Password:</label>
                                 <input name="password" id="password" value="" type="password" /><br /></p>
                                                 
-				<p><input name="send" class="formbutton" value="Send" type="submit" /></p>
+				<p><input name="send" class="formbutton" value="Login" type="submit" /></p>
 			</form>
 		</fieldset>
             </div>
